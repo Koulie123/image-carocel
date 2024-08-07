@@ -1,0 +1,8 @@
+.container {
+    width: 1000px;
+    overflow-x: hidden;
+}
+
+.image-container {
+    width: 4000px;
+}
