@@ -36,7 +36,16 @@ if (imageParent != null){
 
 
 //Button
+let translateX= 0;
 let goNextButton = document.querySelector('#go-next');
 goNextButton.addEventListener('click', () => {
     console.log('button clicked');
+    translateX -= 10;
+    imageParent.style.transform = `translateX(${translateX}%)`;
+})
+let goPrevButton = document.querySelector("#go-prev");
+goPrevButton.addEventListener('click', () => {
+    console.log('previous button clicked');
+    translateX += 10;
+    imageParent.style.transform = `translateX(${translateX}%)`;
 })
